@@ -182,11 +182,11 @@ body {
   font-size: 1.2rem;
 }
 
-.main .home .mainContent .content div {
+.main .home .mainContent .content a {
   width: 100%;
 }
 
-.main .home .mainContent .content div button {
+.main .home .mainContent .content a button {
   cursor: pointer;
   width: 300px;
   height: 60px;
@@ -204,7 +204,7 @@ body {
   transition: all 0.3s ease-out;
 }
 
-.main .home .mainContent .content div button:hover {
+.main .home .mainContent .content a button:hover {
   background-color: white;
   color: #529928;
 }
