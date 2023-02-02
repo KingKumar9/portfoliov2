@@ -94,7 +94,7 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: clamp(65vh, 100vh, 800px);
+    height: auto;
 
     .mainContent {
       display: flex;
@@ -180,6 +180,7 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
       justify-content: center;
       align-items: center;
       gap: 3vmax;
+      margin: 20px 0 80px 0;
 
       .social {
         display: flex;
@@ -226,7 +227,7 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
       margin-top: 80px;
 
       .card {
-        width: 40vmin;
+        width: 500px;
         height: 400px;
         background-color: rgb(202, 202, 202);
         padding: 30px 35px;
