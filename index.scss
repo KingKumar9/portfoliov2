@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   font-family: Montserrat, "sans serif";
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 // VARIABLES
@@ -17,9 +18,9 @@ $primaryclr: #529928;
 $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 
 .navBar {
-  width: 100%;
+  width: 100vw;
   height: clamp(100px, 120px, 200px);
-  padding: 0 5vmax;
+  padding: 0 60px;
   display: flex;
   align-items: center;
   background-color: #e4e4e4;
@@ -59,10 +60,11 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
       text-decoration: none;
       color: black;
+      transition: all 0.2s ease-in-out;
     }
 
     a:hover {
-      background-color: #b8b8b8;
+      background-color: #ccc;
     }
 
     button {
@@ -88,7 +90,7 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 .main {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: auto;
 
   .home {
@@ -108,7 +110,7 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        height: 600px;
+        height: auto;
         margin: 4vmax;
       }
 
@@ -120,7 +122,7 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 
         h1 {
           max-width: 600px;
-          margin-bottom: 20px;
+          margin-bottom: 40px;
           font-weight: 900;
           font-size: 4rem;
 
@@ -225,7 +227,7 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
       width: 100%;
       justify-content: center;
       gap: 5vmin;
-      margin: 80px 0 50px 0;
+      margin: 80px 0;
 
       .card {
         width: 500px;
@@ -262,6 +264,30 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
         background-color: $primaryclr;
         color: white;
         box-shadow: $boxShadow;
+      }
+    }
+
+    .badges {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        transition: all 0.2s ease-in-out;
+
+        img {
+          width: 200px;
+          height: auto;
+        }
+      }
+
+      a:hover {
+        transform: scale(1.1);
       }
     }
   }

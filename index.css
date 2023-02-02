@@ -11,12 +11,13 @@ body {
   min-height: 100vh;
   font-family: Montserrat, "sans serif";
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 .navBar {
-  width: 100%;
+  width: 100vw;
   height: clamp(100px, 120px, 200px);
-  padding: 0 5vmax;
+  padding: 0 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,10 +77,12 @@ body {
   border-radius: 10px;
   text-decoration: none;
   color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navBar .links a:hover {
-  background-color: #b8b8b8;
+  background-color: #ccc;
 }
 
 .navBar .links button {
@@ -110,7 +113,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
@@ -147,7 +150,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
-  height: 600px;
+  height: auto;
   margin: 4vmax;
 }
 
@@ -167,7 +170,7 @@ body {
 
 .main .home .mainContent .content h1 {
   max-width: 600px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: 900;
   font-size: 4rem;
 }
@@ -303,7 +306,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5vmin;
-  margin: 80px 0 50px 0;
+  margin: 80px 0;
 }
 
 .main .skills .cards .card {
@@ -343,6 +346,38 @@ body {
   color: white;
   -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main .skills .badges {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .skills .badges a {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main .skills .badges a img {
+  width: 200px;
+  height: auto;
+}
+
+.main .skills .badges a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main .projects {
