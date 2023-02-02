@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -302,7 +303,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5vmin;
-  margin-top: 80px;
+  margin: 80px 0 50px 0;
 }
 
 .main .skills .cards .card {
@@ -345,10 +346,29 @@ body {
 }
 
 .main .projects {
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 800px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  padding: 80px 5vmin;
+}
+
+.main .projects h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.main .projects h2 span {
+  color: #529928;
 }
 /*# sourceMappingURL=index.css.map */
