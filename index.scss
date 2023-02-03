@@ -31,12 +31,17 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
     justify-content: left;
     width: 20%;
 
-    h3 {
-      font-size: 2.2rem;
-      font-weight: 800;
+    a {
+      text-decoration: none;
 
-      span {
-        color: $primaryclr;
+      h3 {
+        color: #000;
+        font-size: 2.2rem;
+        font-weight: 800;
+
+        span {
+          color: $primaryclr;
+        }
       }
     }
   }
@@ -47,13 +52,13 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
     align-items: center;
     width: 80%;
 
-    a,
+    .link,
     button {
       cursor: pointer;
       font-weight: 600;
     }
 
-    a {
+    .link {
       display: flex;
       margin-right: 2vmax;
       padding: 10px 20px;
@@ -63,26 +68,28 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
       transition: all 0.2s ease-in-out;
     }
 
-    a:hover {
+    .link:hover {
       background-color: #ccc;
     }
 
-    button {
-      min-width: 200px;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 2rem;
-      background-color: $primaryclr;
-      color: white;
-      font-size: 1rem;
-      box-shadow: $boxShadow;
-      border: 2px solid $primaryclr;
-      transition: all 0.3s ease-out;
-    }
+    .contactBtn {
+      button {
+        min-width: 200px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 2rem;
+        background-color: $primaryclr;
+        color: white;
+        font-size: 1rem;
+        box-shadow: $boxShadow;
+        border: 2px solid $primaryclr;
+        transition: all 0.3s ease-out;
+      }
 
-    button:hover {
-      background-color: white;
-      color: $primaryclr;
+      button:hover {
+        background-color: white;
+        color: $primaryclr;
+      }
     }
   }
 }
@@ -357,22 +364,42 @@ $boxShadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
           margin-bottom: 32px;
         }
 
-        a {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 1rem;
-          color: $primaryclr;
+        div {
+          a {
+            width: -moz-fit-content;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: 2px solid $primaryclr;
+            border-radius: 30px;
+            color: $primaryclr;
+            transition: all 0.2s ease-in-out;
 
-          p {
-            font-weight: 700;
-            margin-right: 12px;
+            p {
+              font-weight: 700;
+              margin-right: 12px;
+              transition: all 0.1s ease-in-out;
+            }
+
+            img {
+              width: 24px;
+              height: 24px;
+              transition: all 0.1s ease-in-out;
+            }
           }
 
-          img {
-            width: 24px;
-            height: 24px;
+          a:hover {
+            background-color: $primaryclr;
+            color: #fff;
+
+            img {
+              -webkit-filter: brightness(100);
+              filter: brightness(100);
+            }
           }
         }
       }
