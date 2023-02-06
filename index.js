@@ -1,4 +1,4 @@
-// TOGGLE NAVIGATION VIEW BASED ON SCROLL
+// TOGGLE NAVIGATION BAR VISIBILITY BASED ON SCROLL
 //
 // Get Navigation Bar
 var navBar = document.getElementById('navBar');
@@ -12,13 +12,11 @@ window.addEventListener('scroll', function() {
   // Check Between Previous and Current Position
   if ((document.body.getBoundingClientRect()).top > scrollPos) {
     navBar.classList.add('sticky');
-  } else if (window.scrollY <= 100) {
-    navBar.classList.remove('sticky');
   } else {
         navBar.classList.remove('sticky');
     }
   
-  // Remove Box Shadow
+  // Remove Box Shadow When Top Of Page
   if (window.scrollY < 100) {
     navBar.classList.remove('sticky')
   }
